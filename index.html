@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" type="image/png" href="img\favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>CAC-Movies</title>
+</head>
+
+<body class="body">
+    
+    <header class="header">
+        <nav class="navegacion">
+            <a class="Logo animate__animated animate__swing" href="index.html">
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <span>CAC-Movies</span>
+            </a>
+            <ul class="listaNav">
+                <li class="listaItem"><a class="linkNav" href="#tendencias">Tendencias</a></li>
+                <li class="listaItem"><a class="linkNav" href="registrarse.html">Registrarse</a></li>
+                <li class="listaItem"><a class="linkNav iniciarSesion" href="iniciosesion.html">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        
+        <section class="sectionPrincipal animate__animated animate__zoomIn">
+            <h1 class="tituloPrincipal">Películas y series ilimitadas</h1>
+            <h1 class="tituloPrincipal">en un solo lugar</h1>
+            <h2 class="subtituloPrincipal">Disfruta donde quieras</h2>
+            <h2 class="subtituloPrincipal">Cancela en cualquier momento</h2>
+            <a class="botonRegistrarse" href="registrarse.html">Registrarse</a>
+        </section>
+        
+        <section class="buscadorPrincipal animate__animated animate__slideInUp">
+            <h2 class="tituloSection">¿Qué estas buscando para ver?</h2>
+            <form class="buscadorPeliculas">
+                <input class="inputBuscador" type="text" placeholder="Buscar película o serie..." id="buscar" name="buscar">
+                <input class="boton" type="submit" value="Buscar">
+            </form>
+        </section>
+        
+        <hr>
+        
+        <section class="peliculasTendencia animate__animated animate__slideInUp">
+            <h3 class="tituloSection">Las tendencias de hoy</h3>
+            <div class="peliculas" id="tendenciasContainer">
+                
+                <div class="cardPeliculas">
+                    <a href="detalle.html">
+                        <img src="img/Tendencias/1.jpg" alt="Iron Man 3">
+                        <h3>Iron Man 3</h3>
+                    </a>
+                </div>
+                
+                <div class="cardPeliculas">
+                    <a href="detalle.html">
+                        <img src="img/Tendencias/2.jpg" alt="Thor: Love and Thunder">
+                        <h3>Thor: Love and Thunder</h3>
+                    </a>
+                </div>
+                
+                <div class="cardPeliculas">
+                    <a href="detalle.html">
+                        <img src="img/Tendencias/3.jpg" alt="Thor: Ragnarok">
+                        <h3>Thor: Ragnarok</h3>
+                    </a>
+                </div>
+                
+                <div class="cardPeliculas">
+                    <a href="detalle.html">
+                        <img src="img/Tendencias/4.jpg" alt="Resident Evil">
+                        <h3>Resident Evil</h3>
+                    </a>
+                </div>
+                
+                <div class="cardPeliculas">
+                    <a href="detalle.html">
+                        <img src="img/Tendencias/5.jpg" alt="La Vieja Guardia">
+                        <h3>La Vieja Guardia</h3>
+                    </a>
+                </div>
+                
+                <div class="cardPeliculas">
+                    <a href="detalle.html">
+                        <img src="img/Tendencias/6.jpg" alt="Spectral">
+                        <h3>Spectral</h3>
+                    </a>
+                </div>
+                
+                <div class="cardPeliculas">
+                    <a href="detalle.html">
+                        <img src="img/Tendencias/7.jpg" alt="300: El Origen de un Imperio">
+                        <h3>300: El Origen de un Imperio</h3>
+                    </a>
+                </div>
+                
+                <div class="cardPeliculas">
+                    <a href="detalle.html">
+                        <img src="img/Tendencias/8.jpg" alt="Project Power">
+                        <h3>Project Power</h3>
+                    </a>
+                </div>
+                
+                <div class="cardPeliculas">
+                    <a href="detalle.html">
+                        <img src="img/Tendencias/9.jpg" alt="Venom: Carnage liberado">
+                        <h3>Venom: Carnage liberado</h3>
+                    </a>
+                </div>
+                
+                <div class="cardPeliculas">
+                    <a href="detalle.html">
+                        <img src="img/Tendencias/10.jpg" alt="Venom">
+                        <h3>Venom</h3>
+                    </a>
+                </div>
+                
+                <div class="cardPeliculas">
+                    <a href="detalle.html">
+                        <img src="img/Tendencias/11.jpg" alt="Spider Man: No Way Home">
+                        <h3>Spider Man: No Way Home</h3>
+                    </a>
+                </div>
+                
+                <div class="cardPeliculas">
+                    <a href="detalle.html">
+                        <img src="img/Tendencias/12.jpg" alt="Avengers: Infinity War">
+                        <h3>Avengers: Infinity War</h3>
+                    </a>
+                </div>                
+                
+            </div>
+
+            <button class="boton">Anterior</button>  
+            <button class="boton">Siguiente</button>
+
+        </section>
+
+        <hr>
+
+        <section class="peliculasAclamadas animate__animated animate__slideInUp">
+            <h3 class="tituloSection">Las más aclamadas</h3>
+            <div class="aclamadas">
+                <div class="cardPeliculas">
+                    <a href="detalle.html">
+                        <img src="img/Aclamadas/01.jpg" alt="The Shawshank Redemption">
+                        <h3>The Shawshank Redemption</h3>
+                    </a>
+                </div>
+                
+                <div class="cardPeliculas">
+                    <a href="detalle.html">
+                        <img src="img/Aclamadas/02.jpg" alt="The Godfather">
+                        <h3>The Godfather</h3>
+                    </a>
+                </div>
+                
+                <div class="cardPeliculas">
+                    <a href="detalle.html">
+                        <img src="img/Aclamadas/03.jpg" alt="The Dark Knight">
+                        <h3>The Dark Knight</h3>
+                    </a>
+                </div>
+                
+                <div class="cardPeliculas">
+                    <a href="detalle.html">
+                        <img src="img/Aclamadas/04.jpg" alt="The Godfather Part II">
+                        <h3>The Godfather Part II</h3>
+                    </a>
+                </div>
+                
+                <div class="cardPeliculas">
+                    <a href="detalle.html">
+                        <img src="img/Aclamadas/05.jpg" alt="12 Angry Men">
+                        <h3>12 Angry Men</h3>
+                    </a>
+                </div>
+                
+                <div class="cardPeliculas">
+                    <a href="detalle.html">
+                        <img src="img/Aclamadas/06.jpg" alt="Schindler's List">
+                        <h3>Schindler's List</h3>
+                    </a>
+                </div>
+                
+                <div class="cardPeliculas">
+                    <a href="detalle.html">
+                        <img src="img/Aclamadas/07.jpg" alt="The Lord of the Rings: The Return of the King">
+                        <h3>The Lord of the Rings: The Return of the King</h3>
+                    </a>
+                </div>                
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <nav class="navegacion">
+            <ul class="listaNav">
+                <li class="listaItem"><a class="linkNav" href="">Términos y condiciones</a></li>
+                <li class="listaItem"><a class="linkNav" href="">Preguntas frecuentes</a></li>
+                <li class="listaItem"><a class="linkNav" href="">Ayuda</a></li>
+                <li class="listaItem"><a class="linkNav administradorPeliculas" href="">Administrador Peliculas</a></li>
+            </ul>
+        </nav>
+
+        <a href="" class="flechaArriba"><img src="img\flecha-hacia-arriba.png" alt="ir arriba flecha"></a>
+    </footer>
+
+</body>
+</html>

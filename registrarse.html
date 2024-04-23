@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" type="image/png" href="img\favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Registro | CAC-MOVIES</title>
+</head>
+
+<body class="bodyRegistrarse">
+    
+    <header class="headerRegistrarse">
+        <nav class="navegacion">
+            <a class="Logo animate__animated animate__swing" href="index.html">
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <span>CAC-Movies</span>
+            </a>
+        </nav>
+    </header>
+
+    <main>     
+        <div class="registerForm">
+            <form action="" method="get" id="Form">
+                <h2 class="tituloSection">Registro</h2>
+                <input type="text" placeholder="Ingresá tu nombre" name="name" id="nameInput" required>
+                <input type="text" placeholder="Ingresá tu apellido" name="lastName" id="lastNameInput" required>
+                <input type="email" placeholder="Ingresá tu email" name="email" id="emailInput" required>
+                <input type="password" placeholder="Creá una contraseña" name="password" id="passwordInput" required>
+                <input type="date" placeholder="Fecha de Nacimiento (día/mes/año)" name="nacimiento" id="nacimientoInput" required>
+                <select name="pais" id="paisSelect" required>
+                    <option value="">País</option>
+                    <option value="AR">Argentina</option>
+                    <option value="BO">Bolivia</option>
+                    <option value="BR">Brasil</option>
+                    <option value="CH">Chile</option>
+                    <option value="CO">Colombia</option>
+                    <option value="EC">Ecuador</option>
+                    <option value="PY">Paraguay</option>
+                    <option value="PE">Perú</option>
+                    <option value="UY">Uruguay</option>
+                    <option value="VE">Venezuela</option>
+                </select>
+                
+                <div class="terminos" required>
+                    <input class="termsCheck" type="checkbox" id="terms">
+                    <label class="textoCheck" for="terminos">Acepto los <a href="#">Términos y Condiciones</a></label>
+                </div>
+                
+                <button type="submit" class="botonRegistrarse">Registrarse</button>
+                <a class="ayuda" href="#">Necesitas ayuda?</a>
+                
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>

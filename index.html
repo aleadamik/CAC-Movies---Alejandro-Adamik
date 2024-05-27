@@ -51,95 +51,11 @@
         <section class="peliculasTendencia animate__animated animate__slideInUp">
             <h3 class="tituloSection">Las tendencias de hoy</h3>
             <div class="peliculas" id="tendenciasContainer">
-                
-                <div class="cardPeliculas">
-                    <a href="detalle.html">
-                        <img src="img/Tendencias/1.jpg" alt="Iron Man 3">
-                        <h3>Iron Man 3</h3>
-                    </a>
-                </div>
-                
-                <div class="cardPeliculas">
-                    <a href="detalle.html">
-                        <img src="img/Tendencias/2.jpg" alt="Thor: Love and Thunder">
-                        <h3>Thor: Love and Thunder</h3>
-                    </a>
-                </div>
-                
-                <div class="cardPeliculas">
-                    <a href="detalle.html">
-                        <img src="img/Tendencias/3.jpg" alt="Thor: Ragnarok">
-                        <h3>Thor: Ragnarok</h3>
-                    </a>
-                </div>
-                
-                <div class="cardPeliculas">
-                    <a href="detalle.html">
-                        <img src="img/Tendencias/4.jpg" alt="Resident Evil">
-                        <h3>Resident Evil</h3>
-                    </a>
-                </div>
-                
-                <div class="cardPeliculas">
-                    <a href="detalle.html">
-                        <img src="img/Tendencias/5.jpg" alt="La Vieja Guardia">
-                        <h3>La Vieja Guardia</h3>
-                    </a>
-                </div>
-                
-                <div class="cardPeliculas">
-                    <a href="detalle.html">
-                        <img src="img/Tendencias/6.jpg" alt="Spectral">
-                        <h3>Spectral</h3>
-                    </a>
-                </div>
-                
-                <div class="cardPeliculas">
-                    <a href="detalle.html">
-                        <img src="img/Tendencias/7.jpg" alt="300: El Origen de un Imperio">
-                        <h3>300: El Origen de un Imperio</h3>
-                    </a>
-                </div>
-                
-                <div class="cardPeliculas">
-                    <a href="detalle.html">
-                        <img src="img/Tendencias/8.jpg" alt="Project Power">
-                        <h3>Project Power</h3>
-                    </a>
-                </div>
-                
-                <div class="cardPeliculas">
-                    <a href="detalle.html">
-                        <img src="img/Tendencias/9.jpg" alt="Venom: Carnage liberado">
-                        <h3>Venom: Carnage liberado</h3>
-                    </a>
-                </div>
-                
-                <div class="cardPeliculas">
-                    <a href="detalle.html">
-                        <img src="img/Tendencias/10.jpg" alt="Venom">
-                        <h3>Venom</h3>
-                    </a>
-                </div>
-                
-                <div class="cardPeliculas">
-                    <a href="detalle.html">
-                        <img src="img/Tendencias/11.jpg" alt="Spider Man: No Way Home">
-                        <h3>Spider Man: No Way Home</h3>
-                    </a>
-                </div>
-                
-                <div class="cardPeliculas">
-                    <a href="detalle.html">
-                        <img src="img/Tendencias/12.jpg" alt="Avengers: Infinity War">
-                        <h3>Avengers: Infinity War</h3>
-                    </a>
-                </div>                
-                
-            </div>
-
-            <button class="boton">Anterior</button>  
-            <button class="boton">Siguiente</button>
+            
+            </div>              
+            
+            <button class="boton" id="anterior">Anterior</button>  
+            <button class="boton" id="siguiente">Siguiente</button>
 
         </section>
 
@@ -147,55 +63,8 @@
 
         <section class="peliculasAclamadas animate__animated animate__slideInUp">
             <h3 class="tituloSection">Las más aclamadas</h3>
-            <div class="aclamadas">
-                <div class="cardPeliculas">
-                    <a href="detalle.html">
-                        <img src="img/Aclamadas/01.jpg" alt="The Shawshank Redemption">
-                        <h3>The Shawshank Redemption</h3>
-                    </a>
-                </div>
+            <div class="aclamadas" id="aclamadasContainer">
                 
-                <div class="cardPeliculas">
-                    <a href="detalle.html">
-                        <img src="img/Aclamadas/02.jpg" alt="The Godfather">
-                        <h3>The Godfather</h3>
-                    </a>
-                </div>
-                
-                <div class="cardPeliculas">
-                    <a href="detalle.html">
-                        <img src="img/Aclamadas/03.jpg" alt="The Dark Knight">
-                        <h3>The Dark Knight</h3>
-                    </a>
-                </div>
-                
-                <div class="cardPeliculas">
-                    <a href="detalle.html">
-                        <img src="img/Aclamadas/04.jpg" alt="The Godfather Part II">
-                        <h3>The Godfather Part II</h3>
-                    </a>
-                </div>
-                
-                <div class="cardPeliculas">
-                    <a href="detalle.html">
-                        <img src="img/Aclamadas/05.jpg" alt="12 Angry Men">
-                        <h3>12 Angry Men</h3>
-                    </a>
-                </div>
-                
-                <div class="cardPeliculas">
-                    <a href="detalle.html">
-                        <img src="img/Aclamadas/06.jpg" alt="Schindler's List">
-                        <h3>Schindler's List</h3>
-                    </a>
-                </div>
-                
-                <div class="cardPeliculas">
-                    <a href="detalle.html">
-                        <img src="img/Aclamadas/07.jpg" alt="The Lord of the Rings: The Return of the King">
-                        <h3>The Lord of the Rings: The Return of the King</h3>
-                    </a>
-                </div>                
             </div>
         </section>
 
@@ -213,6 +82,87 @@
 
         <a href="" class="flechaArriba"><img src="img\flecha-hacia-arriba.png" alt="ir arriba flecha"></a>
     </footer>
-
+    
+    <script>
+        const API_KEY = '6e18caea0bcee9f3d7667929f128b86f';
+        const BASE_URL = 'https://api.themoviedb.org/3';
+        const TRENDING_MOVIES_URL = `${BASE_URL}/trending/movie/day?api_key=${API_KEY}`;
+        const TOP_RATED_MOVIES_URL = `${BASE_URL}/movie/top_rated?api_key=${API_KEY}`;
+        const IMG_BASE_URL = 'https://image.tmdb.org/t/p/w500';
+    
+        document.addEventListener('DOMContentLoaded', () => {
+            fetchMovies(TRENDING_MOVIES_URL, 'tendenciasContainer');
+            fetchMovies(TOP_RATED_MOVIES_URL, 'aclamadasContainer');
+        });
+    
+        function fetchMovies(url, containerId) {
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    displayMovies(data.results, containerId);
+                })
+                .catch(error => {
+                    console.error('Error fetching movies:', error);
+                });
+        }
+    
+        function displayMovies(movies, containerId) {
+            const container = document.getElementById(containerId);
+            container.innerHTML = ''; // Clear any existing content
+    
+            movies.forEach(movie => {
+                const movieCard = document.createElement('div');
+                movieCard.classList.add('cardPeliculas');
+                movieCard.innerHTML = `
+                    <a href="detalle.html?id=${movie.id}">
+                        <img src="${IMG_BASE_URL}${movie.poster_path}" alt="${movie.title}">
+                        <h3>${movie.title}</h3>
+                    </a>
+                `;
+                container.appendChild(movieCard);
+            });
+        }
+    
+        document.addEventListener("DOMContentLoaded", function () {
+            const apiKey = '6e18caea0bcee9f3d7667929f128b86f';
+            const tendenciasContainer = document.getElementById('tendenciasContainer');
+            let currentPage = 1;
+    
+            function fetchTendencias(page) {
+                fetch(`https://api.themoviedb.org/3/trending/movie/day?api_key=${apiKey}&page=${page}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        tendenciasContainer.innerHTML = '';
+                        data.results.forEach(movie => {
+                            const movieCard = document.createElement('div');
+                            movieCard.classList.add('cardPeliculas');
+                            movieCard.innerHTML = `
+                                <a href="detalle.html?id=${movie.id}">
+                                    <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="${movie.title}">
+                                    <h3>${movie.title}</h3>
+                                </a>
+                            `;
+                            tendenciasContainer.appendChild(movieCard);
+                        });
+                    })
+                    .catch(error => console.error('Error fetching trending movies:', error));
+            }
+    
+            document.getElementById('anterior').addEventListener('click', () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    fetchTendencias(currentPage);
+                }
+            });
+    
+            document.getElementById('siguiente').addEventListener('click', () => {
+                currentPage++;
+                fetchTendencias(currentPage);
+            });
+    
+            fetchTendencias(currentPage);
+        });
+    </script>    
+        
 </body>
 </html>

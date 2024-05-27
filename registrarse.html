@@ -52,13 +52,32 @@
                     <label class="textoCheck" for="terminos">Acepto los <a href="#">Términos y Condiciones</a></label>
                 </div>
                 
-                <button type="button" class="btn btn-success">Registrarse</button>
+                <button type="button" class="btn btn-success" onclick="validateForm()">Registrarse</button>
                 
                 <a class="ayuda" href="#">Necesitas ayuda?</a>
                 
             </form>
         </div>
     </main>
+    
+    <script>
+        function validateForm() {
+            var name = document.getElementById('nameInput').value;
+            var lastName = document.getElementById('lastNameInput').value;
+            var email = document.getElementById('emailInput').value;
+            var password = document.getElementById('passwordInput').value;
+            var nacimiento = document.getElementById('nacimientoInput').value;
+            var pais = document.getElementById('paisSelect').value;
+            var terms = document.getElementById('terms').checked;
+
+            if (name === "" || lastName === "" || email === "" || password === "" || nacimiento === "" || pais === "" || !terms) {
+                alert("Por favor, complete todos los campos y acepte los Términos y Condiciones.");
+                return false;
+            } else {
+                document.getElementById('Form').submit();
+            }
+        }
+    </script>
 
 </body>
 </html>

@@ -285,7 +285,32 @@ hr {
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
     }
 }
-    
+
+/* Ajustes responsivos */
+@media (max-width: 1200px) {
+    .peliculas {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .peliculas {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .peliculas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .peliculas {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 /* Index.html: Sección ACLAMADAS */ 
 
 .peliculasAclamadas {
